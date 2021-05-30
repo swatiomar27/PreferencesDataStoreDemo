@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Preference Data Store</string>
+    <string name="enter_name">Enter Name</string>
+    <string name="enter_birthday">Enter birthday</string>
+    <string name="save_birthday">Save Birthday</string>
+    <string name="get_birthday">Get Birthday</string>
+    <string name="save_details_first">Please save details first.</string>
+</resources>
