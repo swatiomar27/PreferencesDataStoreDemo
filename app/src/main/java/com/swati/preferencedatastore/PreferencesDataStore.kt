@@ -8,11 +8,11 @@ import androidx.datastore.preferences.core.stringPreferencesKey
 import androidx.datastore.preferences.preferencesDataStore
 import kotlinx.coroutines.flow.first
 
+private val Context.dataStore: DataStore<Preferences> by preferencesDataStore(name = "app_preferences")
 
-class PreferenceDataStore(
+class PreferencesDataStore(
     private val context: Context
 ) {
-    private val Context.dataStore: DataStore<Preferences> by preferencesDataStore(name = "app_preferences")
 
     suspend fun saveBirthday(key: String, value: String) {
         val dataStoreKey = stringPreferencesKey(key)

@@ -7,13 +7,13 @@ import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.coroutines.launch
 
 class MainActivity : AppCompatActivity() {
-    private lateinit var userPreferences: PreferenceDataStore
+    private lateinit var userPreferences: PreferencesDataStore
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        userPreferences = PreferenceDataStore(this)
+        userPreferences = PreferencesDataStore(this)
 
         buttonSaveBookmark.setOnClickListener {
             val bookmarkKey = editTextBookmarkKeyInput.text.toString().trim()
